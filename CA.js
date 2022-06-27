@@ -1,3 +1,6 @@
+// The Nature of Code
+// Daniel Shiffman
+// http://natureofcode.com
 
 // Wolfram Cellular Automata
 
@@ -51,7 +54,7 @@ function CA(r) {
   		if (this.cells[i] == 1) fill(0);
   		else                    fill(255);
   		noStroke();
-  		ellipse(i*this.w, this.generation*this.w, this.w, this.w);
+  		rect(i*this.w, this.generation*this.w, this.w, this.w);
   	}
   };
 

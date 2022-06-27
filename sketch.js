@@ -11,19 +11,18 @@ var ca;
 var delay = 0;
 
 function setup() {
-  // var cnv = 
-  createCanvas(windowWidth, windowHeight);
-  // var x = (windowWidth - width) / 2;
-  // var y = (windowHeight - height) / 2;
-  // cnv.position(x, y);
+  var cnv = createCanvas(1000, 800);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+   cnv.position(x, y);
   background(158, 0, 49);
   // An initial rule system
   var ruleset = [0, 1, 0, 1, 1, 0, 1, 0];
   ca = new CA(ruleset);
 }
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 function draw() {
   // Draw the CA
   ca.display();
